@@ -1,12 +1,13 @@
 package com.tms.documents;
 
 import java.util.Date;
-
+import lombok.*;
+@Getter @Setter
 public class EmployeeContract extends Contract {
 
-    public Date beginDate;
-    public Date endDate;
-    public String employeeName;
+    private Date beginDate;
+    private Date endDate;
+    private String employeeName;
 
     @Override
     public void infoToString() {
@@ -28,4 +29,6 @@ public class EmployeeContract extends Contract {
         this.documentDate = documentDate;
         this.documentNumber = documentNumber;
     }
+
+
 }

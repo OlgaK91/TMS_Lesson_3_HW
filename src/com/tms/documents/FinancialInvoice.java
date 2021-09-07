@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class FinancialInvoice extends Contract {
 
-    public String departmentCode;
-    public double totalAmount;
+    private String departmentCode;
+    private double totalAmount;
 
     public FinancialInvoice() {
         this.totalAmount = 0.0;

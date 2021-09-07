@@ -4,8 +4,8 @@ package com.tms.documents;
 import java.util.Date;
 
 public class SupplyContract extends Contract {
-    public String supplyType;
-    public int supplyAmount;
+    private String supplyType;
+    private int supplyAmount;
 
     @Override
     public void infoToString() {

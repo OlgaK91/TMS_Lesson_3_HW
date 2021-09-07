@@ -9,17 +9,17 @@ package com.tms.register;
 import com.tms.documents.Contract;
 
 public class Register implements RegisterMotion {
-    public String[] documents;
+    public Contract[] documents;
 
     public Register(int len) {
-        this.documents = new String[len];
+        this.documents = new Contract[len];
     }
 
     @Override
-    public String[] addNewDocument(Contract myNewContract) {
+    public Contract[] addNewDocument(Contract myNewContract) {
         for (int i = 0; i < documents.length; i++) {
             if (documents[i] == null) {
-                documents[i] = myNewContract.documentNumber + " " + myNewContract.documentDate;
+                documents[i] = myNewContract;
                 break;
             }
 

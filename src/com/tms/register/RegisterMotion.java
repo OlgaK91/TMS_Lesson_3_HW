@@ -4,7 +4,7 @@ import com.tms.documents.Contract;
 
 public interface RegisterMotion {
 
-    String[] addNewDocument(Contract myNewContract);
+    Contract[] addNewDocument(Contract myNewContract);
 
     void documentInfo(Contract myNewContract);
 }

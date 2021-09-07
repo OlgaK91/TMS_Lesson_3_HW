@@ -8,8 +8,8 @@ import java.util.Date;
 
 abstract public class Contract {
 
-    public String documentNumber;
-    public Date documentDate;
+    protected String documentNumber;
+    protected Date documentDate;
 
     abstract public void infoToString();
 
